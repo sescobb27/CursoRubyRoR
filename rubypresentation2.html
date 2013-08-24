@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ruby y Ruby on Rails</title>
+  <link rel="stylesheet" type="text/css" href="revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="revealjs/css/theme/serif.css" id="theme">
+  <style type="text/css">
+        code {
+            color: green;
+        }
+        strong, code strong {
+            color: darkblue;
+        }
+        code var {
+            color: orange;
+        }
+        code methodcall {
+            color: black;
+        }
+        code optional {
+            color: darkgray;
+        }
+        code symbol {
+            color: lightblue;
+        }
+  </style>
+</head>
+<body>
+<div class="reveal default center">
+    <div class="slides">
+        <section>
+            <section>
+                <h1>First Sight Love</h1>
+                <h2><img src="/home/simon/Pictures/create/rbp.png"> <div>Ruby, Ruby on Rails</div></h2>
+                <p><small>Image from <a href="http://www.codeschool.com/paths/ruby#rails-best-practices">Code School</a></small></p>
+                <h5>Mil maneras de hacer las cosas, escoge la tuya</h5>
+            </section>
+            <section>
+              <code>
+                  <var>@curso</var> = { <symbol>by:</symbol> { 
+                      <symbol>name:</symbol> <strong>'Simón Escobar B'</strong>}
+                  }
+              </code>
+              <code>
+                Time.<methodcall>now</methodcall>.<methodcall>year</methodcall> <optional># => 2013</optional>
+              </code>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>Un metodo <strong>SIEMPRE</strong> retorna</h1>
+            </section>
+            <section>
+                <!-- imagenes metodos -->
+                <img src="methods.png">
+            </section>
+            <section>
+              <img src="methods2.png">
+            </section>
+            <section>
+              <img src="methods3.png">
+            </section>
+        </section>
+        <section>
+            <section>
+              <h2>Sección <strong>IMPORTANTE</strong></h2>
+            </section>
+            <section>
+              <h1>Lambdas</h1>
+            </section>
+            <section>
+              <img src="lambdas.png">
+            </section>
+            <section>
+              <img src="lambdas2.png">
+            </section>
+            <section>
+              <img src="lambdas3.png">
+            </section>
+        </section>
+        <section>
+            <section>
+              <h1>Procs</h1>
+            </section>
+            <section>
+              <img src="procs.png">
+            </section>
+          </section>
+          <section>
+            <section>
+              <h1>Clases</h1>
+            </section>
+            <section>
+              <img src="clases.png">
+              <h2><code><strong>CursoRoR</strong>.<methodcall>new</methodcall></code></h2>
+            </section>
+            <section>
+              <h1>Get</h1>
+              <img src="clases2.png">
+              <h2><code><var>curso</var> = <strong>CursoRoR</strong>.<methodcall>new</methodcall></code></h2>
+              <h3><code><var>curso</var>.<methodcall>miembros</methodcall></code></h3>
+            </section>
+            <section>
+            <h3>Menos codigo, Mismo comportamiento, solo Ruby</h3>
+              <img src="clases3.png">
+            </section>
+            <section>
+              <h1>Set</h1>
+              <img src="clases4.png">
+              <h2><code><var>curso</var> = <strong>CursoRoR</strong>.<methodcall>new</methodcall></code></h2>
+              <h3><code><var>curso</var><methodcall>.miembros=</methodcall></code></h3>
+            </section>
+            <section>
+              <h3>Menos codigo, Mismo comportamiento, solo Ruby</h3>
+              <img src="clases5.png">
+            </section>
+            <section>
+              <h1>Get y Set</h1>
+              <h3>Menos codigo, Mismo comportamiento, solo Ruby</h3>
+              <img src="clases6.png">
+            </section>
+          </section>
+    </div>
+</div>
+<script src="revealjs/lib/head.min.js"></script>
+<script src="revealjs/js/reveal.min.js"></script>
+<script>
+        Reveal.initialize({
+
+            // Display controls in the bottom right corner
+            controls: true,
+
+            // Display a presentation progress bar
+            progress: true,
+
+            // Push each slide change to the browser history
+            history: true,
+
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
+
+            // Enable touch events for navigation
+            touch: true,
+
+            // Enable the slide overview mode
+            overview: true,
+
+            // Vertical centering of slides
+            center: true,
+
+            // Loop the presentation
+            loop: false,
+
+            // Change the presentation direction to be RTL
+            rtl: false,
+
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
+
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
+
+            // Apply a 3D roll to links on hover
+            rollingLinks: true,
+
+            // Transition style
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
+
+            // Transition style for full page backgrounds
+            backgroundTransition: 'default', // default/linear
+
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
+
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.0
+        });
+</script>
+</body>
+</html>

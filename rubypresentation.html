@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ruby y Ruby on Rails</title>
+    <link rel="stylesheet" type="text/css" href="revealjs/css/reveal.min.css">
+    <link rel="stylesheet" href="revealjs/css/theme/serif.css" id="theme">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+    <style type="text/css">
+            pre code, code {
+                color: green;
+            }
+            strong, pre code strong {
+                color: darkblue;
+            }
+            pre code var {
+                color: orange;
+            }
+            pre code methodcall {
+                color: black;
+            }
+            pre code optional {
+                color: darkgray;
+            }
+            pre code symbol {
+                color: lightblue;
+            }
+    </style>
+</head>
+<body class="print-pdf">
+<div class="reveal default center">
+    <div class="slides">
+    <section>
+            <section>
+                <h1>First Sight Love</h1>
+                <h2><img src="/home/simon/Pictures/create/rbp.png"> <div>Ruby, Ruby on Rails</div></h2>
+                <p><small>Image from <a href="http://www.codeschool.com/paths/ruby#rails-best-practices">Code School</a></small></p>
+                <h5>Mil maneras de hacer las cosas, escoge la tuya</h5>
+            </section>
+            <section>
+                <pre>
+                <code>
+                 {
+                    <symbol>by:</symbol> { 
+                        <symbol>name:</symbol> <strong>'Simón Escobar B'</strong>
+                    },
+                    <symbol>thanks:</symbol> {
+                        <symbol>promotores:</symbol>
+                        %W(
+                            <strong>Helmuth_Trefftz
+                            Alberto_Restrepo
+                            Edwin_Montoya
+                            GEMIS</strong>
+                        ).<methodcall>map!</methodcall> do |<var>promotor</var>|
+                            <var>promotor</var>.<methodcall>gsub!</methodcall> /_/, ' ' if <var>promotor</var> =~ /_+/
+                            <var>promotor</var>
+                        end
+                    },
+                    <symbol>year:</symbol> Time.<methodcall>now</methodcall>.<methodcall>year</methodcall>
+                 }
+                </code>
+                </pre>
+            </section>
+    <section>
+            <pre>
+                    <code>
+                    <strong>def say_hello</strong>
+                        <methodcall>puts</methodcall> 'Hello Class'
+                        <methodcall>p</methodcall> 'Hello Class'
+                        <methodcall>print</methodcall> 'Hello Class'
+                        <methodcall>printf</methodcall> '%s', 'Hello Class'
+                    <strong>end</strong>
+                    </code>
+            </pre>
+            <pre>
+                    <code>
+                    <strong>def hi_mr</strong> <var>student</var>
+                        <methodcall>puts</methodcall> "hi Mr. #{<var >student</var>}"
+                        <methodcall>p</methodcall> "hi Mr. #{<var >student</var>}"
+                        <methodcall>print</methodcall> "hi Mr. #{<var >student</var>}"
+                        <methodcall>printf</methodcall> '%s', "hi Mr. #{<var >student</var>}"
+                    <strong>end</strong>
+                    </code>
+            </pre>
+    </section>
+    </section>
+<section>
+    <section>
+       <h1>Programación Orientada a Objetos</h1>
+    </section>
+<section>
+    <h1>Tipos Básicos</h1>
+    <pre>
+        <code>
+                    <strong>
+                            Strings - Regexp
+                            Numbers
+                            Symbol
+                            Hash - Array
+                            Ranges
+                            NilClass - TrueClass - FalseClass
+                    </strong>
+        </code>
+    </pre>
+</section>
+</section>
+<section>
+        <section>
+                <h1>Control de Flujo</h1>
+                <pre>
+                        <code >
+                            <strong>
+                                if
+                                unless
+                                ?:
+                                blocks
+                                    while
+                                    loop
+                                    times
+                                    upto
+                                    downto
+                                    do
+                                    for
+                                    each
+                                case
+                            </strong>
+                        </code>
+                </pre>
+        </section>
+</section>
+<section>
+        <section>
+                <h1>Entrada y Salida</h1>
+                    <pre>
+                            <code >
+                            <strong>
+                                gets
+                                puts
+                                p
+                                print
+                                printf
+                                ARGV
+                                ARGF
+                                STDIN, $stdin
+                                STDOUT, $stdout
+                                STDERR, $stderr
+                            </strong>
+                            </code>
+                    </pre>
+        </section>
+</section>
+    <section>
+            <h1> Ficheros </h1>
+            <pre>
+                <code >
+                    <strong>
+                        File
+                            dirname
+                            basename
+                            exist?
+                            expand_path
+                            extname
+                            identical?
+                            join
+                            new
+                            open
+                            rename
+                            size
+                    </strong>
+                </code>
+            </pre>
+    </section>
+    <section>
+            <section >
+                <h1>Expresiones Regulares</h1>
+                <h3>Regexp</h3>
+            </section>
+            <section>
+                <a href="http://rubular.com/">Rubular</a>
+            </section>
+    </section>
+<section>
+    <section>
+        <h1>Métodos</h1>
+        <h2>¡¡Todo es una llamada a un método!!</h2>
+        <h2>
+            <pre>
+            <code>
+            <strong>
+            __send__
+            </strong>
+            </code>
+            </pre>
+        </h2>
+    </section>
+    <section>
+        <h1>Un método <strong>SIEMPRE</strong> retorna</h1>
+    </section>
+        <section>
+            <pre>
+                <code>
+                    <strong>
+                        <optional>(attr) | attr | attr = nil | attr = {} | *attr</optional>
+                        def <var>nombre método</var> <optional>attr</optional>
+                        end
+                    </strong>
+                </code>
+            </pre>
+        </section>
+        <section>
+            <pre>
+                <code>
+                    <h2>
+                    <strong>
+                            public
+                            private
+                            protected
+                    </strong>
+                    </h2>
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Sección <strong>IMPORTANTE</strong></h2>
+            <code>
+                lambdas - procs
+            </code>
+        </section>
+</section>
+<section>
+        <section>
+            <h1>Clases</h1>
+            <h2>En la próxima sesion</h2>
+        </section>
+</section>
+    </div>
+</div>
+<script src="revealjs/lib/head.min.js"></script>
+<script src="revealjs/js/reveal.min.js"></script>
+<script>
+        Reveal.initialize({
+
+            // Display controls in the bottom right corner
+            controls: true,
+
+            // Display a presentation progress bar
+            progress: true,
+
+            // Push each slide change to the browser history
+            history: true,
+
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
+
+            // Enable touch events for navigation
+            touch: true,
+
+            // Enable the slide overview mode
+            overview: true,
+
+            // Vertical centering of slides
+            center: true,
+
+            // Loop the presentation
+            loop: false,
+
+            // Change the presentation direction to be RTL
+            rtl: false,
+
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
+
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
+
+            // Apply a 3D roll to links on hover
+            rollingLinks: true,
+
+            // Transition style
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
+
+            // Transition style for full page backgrounds
+            backgroundTransition: 'default', // default/linear
+
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
+
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.0
+        });
+</script>
+</body>
+</html>
