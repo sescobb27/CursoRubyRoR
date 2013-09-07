@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ruby y Ruby on Rails</title>
+  <link rel="stylesheet" type="text/css" href="revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="revealjs/css/theme/serif.css" id="theme">
+  <style type="text/css">
+        symbol {
+            color: darkblue;
+        }
+  </style>
+</head>
+<body>
+<div class="reveal default center">
+  <div class="slides">
+    <section>
+        <section>
+            <h1>First Sight Love</h1>
+            <h2><img src="/home/simon/Pictures/create/rbp.png"> <div>Ruby, Ruby on Rails</div></h2>
+            <p><small>Image from <a href="http://www.codeschool.com/paths/ruby#rails-best-practices">Code School</a></small></p>
+            <h5>Mil maneras de hacer las cosas, escoge la tuya</h5>
+        </section>
+        <section>
+          <code>
+              <var>@curso</var> = { <symbol>by:</symbol> { 
+                  <symbol>name:</symbol> <strong>'Simón Escobar B'</strong>}
+              }
+          </code>
+          <code>
+            Time.<methodcall>now</methodcall>.<methodcall>year</methodcall> <optional># => 2013</optional>
+          </code>
+        </section>
+    </section>
+    <section>
+      <section>
+          <h1>Structs</h1>
+      </section>
+      <section>
+          <img src="struct1.png">
+      </section>
+      <section>
+          <img src="struct2.png">
+      </section>
+    </section>
+    <section>
+        <section>
+            <h1>Aliasing</h1>
+        </section>
+        <section>
+            <img src="alias.png">
+        </section>
+        <section>
+            <img src="alias1.png">
+        </section>
+        <section>
+            <img src="alias2.png">
+        </section>
+        <section>
+            <img src="alias3.png">
+        </section>
+    </section>
+    <section>
+        <section>
+            <h1>Method Missing</h1>
+        </section>
+        <section>
+            <img src="method_missing.png">
+        </section>
+        <section>
+            <img src="method_missing2.png">
+        </section>
+        <section>
+            <img src="method_missing3.png">
+        </section>
+        <section>
+            <img src="method_missing4.png">
+        </section>
+        <section>
+            <img src="method_missing5.png">
+        </section>
+        <section>
+            <h2>Otra forma es:</h2>
+            <img src="method_missing6.png">
+        </section>
+        <section>
+            <h2>Pasando scopes</h2>
+            <img src="method_missing7.png">
+        </section>
+        <section>
+            <h2>Si respondieron si<br /> ¿En que estaban pensando?</h2>
+            <img src="optimize_to_proc.png">
+        </section>
+        <section>
+            <h1>Don't Repeat Yourself</h1>
+            <h2>DRY</h2>
+            <h4>Filosofia Ruby</h4>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h1>Instance Eval</h1>
+        </section>
+        <section>
+            <img src="instance_eval.png">
+        </section>
+        <section>
+            <img src="instance_eval2.png">
+        </section>
+        <section>
+            <h2>Trabajando con scopes</h2>
+            <img src="instance_eval3.png">
+            <img src="instance_eval4.png">
+        </section>
+    </section>
+    <section>
+        <section>
+            <h1>Class Eval</h1>
+            <h2>Entendiendo <symbol>:attr_reader, :attr_writer, :attr_accessor</symbol></h2>
+        </section>
+        <section>
+            <img src="own_accessors.png">
+        </section>
+        <section>
+            <img src="own_accessors2.png">
+        </section>
+        <section>
+            <img src="own_accessors3.png">
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>Next session:</h3>
+            <h1>Ruby on Rails</h1>
+            <h1>First Sight Love</h1>
+            <h5>Gracias!</h5>
+        </section>
+    </section>
+  </div>
+</div>
+<script src="revealjs/lib/head.min.js"></script>
+<script src="revealjs/js/reveal.min.js"></script>
+<script>
+        Reveal.initialize({
+
+            // Display controls in the bottom right corner
+            controls: true,
+
+            // Display a presentation progress bar
+            progress: true,
+
+            // Push each slide change to the browser history
+            history: true,
+
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
+
+            // Enable touch events for navigation
+            touch: true,
+
+            // Enable the slide overview mode
+            overview: true,
+
+            // Vertical centering of slides
+            center: true,
+
+            // Loop the presentation
+            loop: false,
+
+            // Change the presentation direction to be RTL
+            rtl: false,
+
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
+
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
+
+            // Apply a 3D roll to links on hover
+            rollingLinks: true,
+
+            // Transition style
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
+
+            // Transition style for full page backgrounds
+            backgroundTransition: 'default', // default/linear
+
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
+
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.0
+        });
+</script>
+</body>
+</html>
