@@ -1,0 +1,47 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/simon/Documents/Rails/Shopping/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/simon/Documents/Rails/Shopping/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/simon/Documents/Rails/Shopping/app/models/product.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1380384488
+  },
+  "RSpec": {
+    "coverage": {
+      "/home/simon/Documents/Rails/Shopping/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/simon/Documents/Rails/Shopping/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/simon/Documents/Rails/Shopping/app/models/product.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1380385300
+  }
+}
